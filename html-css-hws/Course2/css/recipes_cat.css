@@ -1,0 +1,36 @@
+.recipe {
+     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+     padding: 2rem;
+     margin-bottom: 1.5rem;
+     color: teal;
+ }
+ 
+ .recipe a {
+     display: block;
+     background-color: teal;
+     color: #EDC7B7;
+     text-align: center;
+     padding-top: 0.9rem;
+     padding-bottom: 0.9rem;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+     font-size: 2.5rem;
+     margin-top: 1rem;
+ }
+ 
+ .recipe p {
+     font-size: 1.5rem;
+     /* margin: 0; */
+     padding: 0.5rem;
+     text-align: justify;
+     color: black;
+ }
+ .recipe h3 {
+    text-align: center;
+}
+ 
+ .recipe a:hover {
+     background-color: teal;
+     transition: background-color 2s;
+ }
+
+ 

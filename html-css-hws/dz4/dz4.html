@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/flex-grid.css">
+    <link rel="stylesheet" href="css/flex-style.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <title>Grid-Flex-dz4</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">       
+            <nav>
+                <a class="navbar-title" href="#">Ссылка 1</a>
+                <a class="navbar-title" href="#">Ссылка 2</a>
+                <a class="navbar-title" href="#">Ссылка 3</a>
+                <a class="navbar-title" href="#">Ссылка 4</a>
+                <a class="navbar-title" href="#">Ссылка 5</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="main-block flex-row">
+        <aside class="col-2">
+            <nav class="flex-column">
+                <a class="navbar-title-aside" href="#">Ссылка 1</a>
+                <a class="navbar-title-aside" href="#">Ссылка 2</a>
+                <a class="navbar-title-aside" href="#">Ссылка 3</a>
+                <a class="navbar-title-aside" href="#">Ссылка 4</a>
+                <a class="navbar-title-aside" href="#">Ссылка 5</a>
+            </nav>
+        </aside>
+        <main class="col-10">
+            <div class="flex-row">
+                <div class="offset-2 col-8 ">
+                    <div class="margin size_block">
+                        <img src="img/1.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="col-3">
+                    <div class="padding margin orange">
+                        <h2>Title</h2>
+                        <img src="img/1.jpg">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="padding margin orange">
+                        <h2>Title</h2>
+                        <img src="img/1.jpg">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="padding margin orange">
+                        <h2>Title</h2>
+                        <img src="img/1.jpg">
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <div class="padding margin orange">
+                        <h2>Title</h2>
+                        <img src="img/1.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="col-6 flex-row">
+                    <div class="margin flex-row">
+                        <div class="col-6 flex-row">
+                            <article class="orange">
+                                <img src="img/1.jpg">
+                            </article>
+                        </div>
+                        <div class="col-6 flex-row">
+                            <article class=" orange">
+                                текст тексттекстvтекс ттексттексттекст
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 flex-row"><article class="padding margin orange">Lorem ipsum ipsum.Lorem ipsum.ipsum</article></div>
+                <div class="col-3 flex-row"><article class="padding margin orange">Lorem ipsum.ipsum Lorem ipsum.ipsum</article></div>
+            </div>
+            <div class="flex-row">
+                <div class="col-3 flex-row"><article class="padding margin orange">Lorem ipsum.ipsumLorem ipsum.ipsum</article></div>
+                <div class="col-3 flex-row"><article class="padding margin orange">Lorem ipsum ipsum.Lorem ipsum.ipsum</article></div>
+                <div class="col-6"><article class="padding margin orange">Lorem ipsum.</article></div>
+            </div>
+            <div class="flex-row">
+                <div class="col-6 flex-row">
+                    <div class="margin flex-row">
+                        <div class="col-6 flex-column">
+                            <article class="padding orange">Lorem ipsum.Lorem ipsum.ipsum</article>
+                            <article class=" orange">
+                                <img src="img/1.jpg">
+                            </article>
+                        </div>
+                        <div class="col-6 flex-row">
+                            <article class=" orange">
+                                <img src="img/1.jpg">
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 flex-column space-between">
+                    <!-- <div class="margin flex-column space-between"> -->
+                        <article class="margin padding orange">Lorem ipsum.ipsumLorem ipsum.ipsum Lorem ipsum.ipsumLorem ipsum.ipsum</article>
+                        <article class="margin padding orange">Lorem ipsum.ipsumLorem ipsum.ipsum Lorem ipsum.ipsumLorem ipsum.ipsum</article>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </main>
+        
+    </div>
+    
+    <footer class="footer">Footer</footer>
+    
+    </body>
+</html>

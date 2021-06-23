@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="eZharikov">
+    <meta name="keywords" content="cook, food">
+    <meta name="description" content="site for cooking">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/flex-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/add_rec.css">
+    <title>Личный кабинет</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <ul class="menu">
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="recipes_cat.html">Меню на день</a></li>
+                <li><a href="form.html">Войти</a></li>
+                <li>
+                    <form class="butt">
+                        <button type="submit" class="button_add" formaction="add_rec.html">Добавить рецепт</button>
+                    </form>
+                </li>
+                <li>
+                    <form class="search">
+                        <span>
+                            <span class="fa fa-search icon"></span>
+                            <input type="text" placeholder="Поиск">
+                        </span>
+                    </form>
+                </li>
+            </ul>   
+        </div>
+    </header>
+
+<section class="form-section flex-row">   
+    <form class="col-10" enctype="multipart/form-data" action="#" method="post">
+        <fieldset>
+            <legend>Добавление рецепта</legend>
+            <div class="flex-row">
+                <label class="col-12" for="kitchen">Выбор кухни</label>
+                <select id="kitchen" name="kitchen">
+                    <option value="kitchen1">Русская</option>
+                    <option value="kitchen2">Европейская</option>
+                    <option value="kitchen3">Китайская</option>
+                    <option value="kitchen3">Французская</option>
+                    <option value="kitchen3">Итальянская</option>
+                    <option value="kitchen3">Японская</option>
+                    <option value="kitchen3">Корейская</option>
+                    <option value="kitchen3">Другая</option>
+                </select>
+            </div>
+            <div class="flex-row">
+                <label class="col-12" for="title">Введите название блюда</label>
+                <input class="col-6" type="text" id="title" name="title" minlength="2" maxlength="100">
+            </div>
+            <div class="flex-row">
+                <label class="col-12" for="cook-time">Укажите время приготовления</label>
+                <input class="col-2" type="number" id="cook-time" name="cook-time" min="1" max="100" placeholder="Минут">
+            </div>
+            <div class="flex-row">
+                <label class="col-12" for="cover">Загрузить фото рецепта</label>
+                <input class="col-6" id="cover" type="file" accept="image/*"
+                    name="cover">
+            </div>
+            <div class="flex-row">
+                <span class="col-12">Укажите сложность приготовления</span>
+                <div>
+                    <label><input type="checkbox" value="1" name="diff[]">Легко</label>
+                    <label><input type="checkbox" value="2" name="diff[]">Средне</label>
+                    <label><input type="checkbox" value="3" name="diff[]">Сложно</label>
+                    <label><input type="checkbox" value="4" name="diff[]">Очень сложно</label>
+                </div>
+                
+        
+            </div>
+            <button class="button_add" type="submit">Добавить</button>
+            <input class="button_add" type="reset" value="Очистить">
+        </fieldset>
+    </form>
+</section>
+
+</body>
+<footer>
+    <div class="social twitter">
+        <a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+    </div>
+    <div class="social facebook">
+        <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>    
+    </div>
+    <div class="social vk">
+        <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i></a>    
+    </div>
+    <div class="social pinterest">
+        <a href="#" target="_blank"><i class="fa fa-pinterest fa-2x"></i></a>
+    </div> 
+    <span>&copy eZharikov 2021</span>
+</footer>
+</html>

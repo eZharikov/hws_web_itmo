@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/flex-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Добавление задачи</title>
+</head>
+<body>
+    <div>
+        <form name="task_form">
+            <h1>Добавление задачи</h1>
+            <span id="done"></span>
+            <div class="flex-row input_title">
+                <label for="title" class="col-2">Название задачи</label>
+                <input type="text" name="title" id="title" class="col-6">
+                <span id="error_title"></span>
+            </div>
+            <div class="flex-row">
+                <label for="desc" class="col-2">Описание задачи</label>
+                <textarea name="desc" id="desc" cols="20" rows="5" class="col-6"></textarea>
+            </div>
+            <div class="flex-row input_date">
+                <label for="date" class="col-2">Срок выполнения задачи</label>
+                <input type="datetime-local" name="date" id="date" class="col-6">
+                <span id="error_date"></span>
+            </div>
+            <div class="flex-row addpersonbox">
+                <button id = "addperson" class="button col-2" >Добавить участника</button>
+            </div>
+            <div class="flex-row input_submit">
+                <input  id = "addtask" class="button col-2" type="submit" value="Добавить задачу">
+                <span id="error"></span>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <script src="js/add_task.js"></script>
+</body>
+</html>

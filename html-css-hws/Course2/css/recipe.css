@@ -1,0 +1,54 @@
+.recipe {
+    color: #123C69;
+}
+
+.info {
+    display: flex;
+    font-weight: bold;
+}
+.info-dish{
+    margin-right: auto;
+}
+
+.info-kitchen {
+    margin-left: auto;
+}
+
+.pagination span{
+    display: inline-block;
+    width: 50px; /* ширина */
+    height: 50px; /* высота */
+    line-height: 50px;
+    /* рамка: толщина стиль цвет */
+    border: 3px solid #123C69;
+    /* скругление углов */
+    border-radius: 50%;
+    text-align: center;
+    color: #123C69;
+    margin: 1rem;
+}
+/* <span> <a class="active"></a></span> */
+/* .pagination span .active {} */
+/* <span class="active"></span> */
+.pagination span.active {
+    background-color: #BAB2B5;
+}
+
+img {
+    text-align: center;
+    height: 100%;
+    max-width: 540px;
+}
+.center-img{
+display:block;
+margin:auto;
+}
+p {
+    text-align: justify;
+}
+h3 {
+    text-align: center;
+}
+
+
+

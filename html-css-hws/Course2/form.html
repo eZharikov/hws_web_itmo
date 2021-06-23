@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма входа</title>
+    <meta name="author" content="eZharikov">
+    <meta name="keywords" content="cook, food">
+    <meta name="description" content="site for cooking">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg">
+    <header>
+        <div class="container">
+            <ul class="menu">
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="recipes_cat.html">Меню на день</a></li>
+                <li><a href="form.html">Войти</a></li>
+                <li>
+                    <form class="butt">
+                        <button type="submit" class="button_add" formaction="add_rec.html">Добавить рецепт</button>
+                    </form>
+                </li>
+                <li>
+                    <form class="search">
+                        <span>
+                            <span class="fa fa-search icon"></span>
+                            <input type="text" placeholder="Поиск">
+                        </span>
+                    </form>
+                </li>
+            </ul>   
+        </div>
+    </header>
+
+<main>
+    <div>
+        <form action="#" method="post" class="authorization">
+            <div class="input-wrapper">
+                <input type="email" name="email" placeholder="Введите e-mail">
+                <span class="fa fa-envelope email"></span>
+            </div>
+            <div class="input-wrapper">
+                <input type="password" name="password" placeholder="Введите пароль">
+                <span class="fa fa-key password"></span>
+            </div>
+            <div>
+                <label>
+                    Запомнить:
+                    <input type="checkbox" name="remember" value="remember" checked>
+                </label>
+            </div>
+            <input type="submit" class="button_add" value="Войти">
+
+        </form>
+    </div>
+</main>
+
+
+<footer>
+    <div class="social twitter">
+        <a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+    </div>
+    <div class="social facebook">
+        <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>    
+    </div>
+    <div class="social vk">
+        <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i></a>    
+    </div>
+    <div class="social pinterest">
+        <a href="#" target="_blank"><i class="fa fa-pinterest fa-2x"></i></a>
+    </div> 
+    <span>&copy eZharikov 2021</span>
+</footer>
+
+
+</body>
+</html>

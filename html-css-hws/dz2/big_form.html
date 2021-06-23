@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Опрос</title>
+</head>
+<body>
+    <form action="#" method="POST" name="about" enctype="multipart/form-data">
+        <fieldset>
+            <legend>О Себе</legend>
+            <div>
+                <input type="text" name="name" placeholder="Имя" autofocus required>
+            </div>
+            <div>
+                <input type="text" name="lastName" placeholder="Фамилия" required>
+            </div>
+            <div>
+                <input type="text" name="middleName" placeholder="Отчество" required>
+            </div>
+            <div>
+                <input type="tel" name="tel" placeholder="Телефон" required>
+            </div>
+            <div>
+                <input type="email" name="email" placeholder="Электронный адрес" required>
+            </div>
+            <div>
+                <label>Загрузите свое фото <input type="file" name="foto" accept="image/*"></label>
+            </div>
+            <div>
+                <label>Дата рождения <input type="date" name="date_bith"></label>
+            </div>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>О работе</legend>
+            <div>
+                <label>Место работы <input type="text" name="job_place" value="ООО Рога и Копыта" disabled></label>
+            </div>
+            <div>
+                <label>Ваша должность <input type="text" name="job" placeholder="Введите должность"></label>
+            </div>
+            <div>
+                <label>Текущий стаж на этой должности, лет <input type="number" name="job_time" min="0" max="100"></label>
+            </div>
+            <div>
+                <lable for="job_spec">Ваша роль</lable>
+                <select id="job_spec" name="job_spec">
+                    <option value="specialist">Специалист</option>
+                    <option value="ingeneer">Инженер</option>
+                    <option value="expert">Эксперт</option>
+                    <option value="manager">Руководитель</option>
+                    <option value="other">Другая</option>
+                </select>
+                <div>
+                    <input type="text" name="other_job_spec" placeholder="Введите вашу роль" hidden>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Опрос Часть 1</legend>
+            <div>
+                <label for="pp_bi">Какую BI систему вы используете?</label>
+                <select id="pp_bi" name="pp_bi">
+                    <option value="sap">SAP</option>
+                    <option value="Oracle">Oracle</option>
+                    <option value="QlikView">QlikView</option>
+                    <option value="Microsoft_BI">Microsoft BI</option>
+                    <option value="Other_BI">Other BI</option>
+                </select>
+            </div>
+            <div>
+                <p>Как часто пользуетесь BI?</p>
+                <label><input type="radio" name="bi_time_use" value="1">Ежедневно</label>
+                <label><input type="radio" name="bi_time_use" value="2">2-3 раза в неделю</label>
+                <label><input type="radio" name="bi_time_use" value="3">Раз в месяц</label>
+                <label><input type="radio" name="bi_time_use" value="4">По необходимости</label>
+            </div>
+            <div>
+                <textarea cols="70" rows="10" name="descr_task_bi" placeholder="Опишите какие данные вы берете из BI. Максимум 256 символов" wrap="soft"
+                maxlength="256"></textarea>
+            </div>
+            <div>
+                <p>Еще один вопрос</p>
+                <label><input type="checkbox" name="another_q[]" value="1">Ответ 1</label>
+                <label><input type="checkbox" name="another_q[]" value="2">Ответ 2</label>
+                <label><input type="checkbox" name="another_q[]" value="3">Ответ 3</label>
+                <label><input type="checkbox" name="another_q[]" value="4">Ответ 4</label>
+            </div>
+            <div>
+                <label>Вы любите опросы?<input type="checkbox" name="like_surv" value="1"></label>
+            </div>
+        </fieldset>
+        <p>Ваш самый лучший месяц в жизни?</p>
+        <input type="month" name="happy_month_live">
+        <p>Время вашего будильника по утрам</p>
+        <input type="time" name="getup_time">
+        <p>Ваш любимый цвет</p>
+        <input type="color" name="like_color">       
+    </form>
+    
+</body>
+</html>

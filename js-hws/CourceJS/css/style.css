@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* PAGE ADD_TASK */
+
+section{
+    margin: auto;
+    margin-top: 100px;
+    width: 800px;
+}
+
+form{
+    border: none;
+    padding: 0;
+    border: 3px solid darkslategrey;
+    padding: 30px 60px;
+}
+
+h1{
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.input_submit, .input_title, .input_date, form{
+    position: relative;
+}
+
+
+#error_title, #error_date, #error{
+    bottom: -100%;
+    left: 33%;
+    position: absolute;
+    color: red;
+}
+
+#done{
+    color: green;
+    top: -25px;
+    right: 0;
+    position: absolute;
+}
+
+section div{
+    margin-bottom: 50px;
+}
+
+.button{
+    display: block;
+    margin: auto;
+}
+
+#addperson{
+    width: 30%;
+    margin-bottom: 25px;
+}
+
+#addtask{
+    width: 50%;
+}
+
+.unshown{
+    display: none;
+}
+
+
+/* PAGE ALL_TASKS */
+
+.tasks{
+    width: 600px;
+}
+
+.task{
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.task h2{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+p{
+    margin: 0;
+    padding-top: 10px;
+}
+
+.button_del{
+    margin-top: 25px;
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 5px 0;
+}
+
+.background_next{
+    background-color: #bfbfbf;
+}
+
+.active{
+    background-color: #ff6601;
+}

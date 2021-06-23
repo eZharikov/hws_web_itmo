@@ -1,0 +1,46 @@
+
+
+.authorization {
+    background-color: transparent;
+    padding: 1.7rem;
+    text-align: center;
+    justify-self: center;
+}
+
+.authorization div {
+    margin-bottom: 1.3rem;
+}
+
+.authorization input[type="email"],
+.authorization input[type="password"] {
+    border-style: none;
+    outline-style: none;
+    background: transparent;
+    color: #123C69;
+    font-size: 1.5rem;
+    border-bottom: 3px solid #123C69;
+    border-radius: 0;
+}
+
+.authorization input[type="email"]:focus,
+.authorization input[type="password"]:focus {
+    color: #AC3B61;
+    border-bottom: 3px solid #AC3B61;
+}
+
+input::-webkit-input-placeholder {color: #123C69}
+input::-moz-placeholder {color: #123C69}
+
+input:focus::-webkit-input-placeholder {color: #AC3B61}
+input:focus::-moz-placeholder {color: #AC3B61}
+
+.authorization input[type="email"]:focus + .email,
+.authorization input[type="password"]:focus + .password {
+
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
